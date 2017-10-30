@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="newcss1.css" rel="stylesheet" type="text/css"/>
+       
+        <title>Teste</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="tela" style="background-image: url('Imagem/img3.jpg')">
+      
+  <nav class="dropdownmenu">
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Empresa</a></li>
+    <li><a href="">Anucie seu Imóvel</a></li>
+    <li><a href="">Perfil Imóvel</a></li>
+    <li><a href="">Área do Cliente</a>
+      <ul id="submenu">
+        <li><a href="">2² Via de Boleto</a></li>
+        <li><a href="">Extrato Locador</a></li>
+        <li><a href="">Documentos para Download </a></li>
+        <li><a href="">Financiamentos </a></li>
+      </ul>
+    </li>
+    <li><a href="">Localização</a></li>
+    <li><a href="">Contato</a></li>
+  </ul>
+  </nav>
+        <br>  
+    <div class="fundo">
+        
+        
+    </div><br>
+        <form class="busca" action="Resultado" method="GET">
+            <input type="button" id="venda" value="Quero Comprar" class="botao">
+            <input type="button" id="comprar" value="Quero Alugar" class="botao1">
+        </form>
+    <div id="telacomprar">
+        <label class="label">       
+           <select size="1" class="menu">
+               <option>Cidade</option>
+               <option>Belo Horizonte</option>
+               <option>Contagem</option>
+               <option>Betim</option>
+               <option>Nova Lima</option>
+           </select>       
+         <select size="1" class="menu">
+               <option>Tipo</option>
+               <option></option>
+           </select>      
+           <select size="1" class="menu">
+               <option>Bairro</option>
+               <option></option>
+           </select>            
+           <select size="1" class="menu">
+               <option>Quarto</option>
+               <option></option>
+           </select>            
+           <select size="1" class="menu">
+               <option>Valor Minimo</option>
+               <option></option>
+           </select>
+               
+           <select size="1" class="menu">
+               <option>Valor Máximo</option>
+               <option></option>
+           </select>
+        </label>
+    </div><br>
+    <div>
+     <input type="text" name="Busca" placeholder="Pesquisar por código............." class="resultados" onclick="escondermapa()"> 
+     <input type="submit"  value="Buscar pelo mapa" class="btn" title="Buscar pelo Mapa" id='novomapa' onclick="funcaoabrirmapa()" />
+  
+     </div>    
+    <form action="index.html" methodo="get" id="meumapa">
+    <fieldset >
+        <input type="text" id="novalocalizacao" name="Busca" placeholder="Pesquisar imóveis............." class="resultados" >
+        <div id="mapa" style="width: 750px;height: 300px"></div>
+     </fieldset>
+    </form>
+     <div class="informacao">
+      
+     </div>
+   
+    <script src="codigojava.js" ></script>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
+   
+    </body>
+    
+</html>

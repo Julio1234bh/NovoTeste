@@ -1,0 +1,168 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/10/2017, 16:23:40
+    Author     : Julio
+*/
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+       
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 80%;
+        margin-left: 20%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+        
+}
+.dropdownmenu a {
+	background:  crimson;
+	color: #FFFFFF;
+	display: block;
+	font: bold 12px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}
+.fundo{
+    background-color: transparent;
+    width: 90%;  
+      
+    height: 100px;
+    margin-left: 5%;
+    color:white;
+    font-family: arial;
+    font-size: 13px;
+}
+.info{
+    display: inline;
+    margin-left: 70%;
+}
+.tela{
+    width: 100%;
+        
+}
+.imagens{
+    width: 20%
+}
+.botao{
+    background-color:crimson;
+    width: 10%;
+    height: 10%;
+    float: bottom;
+    padding: 8px;
+    border:  firebrick;
+    margin-left: 35%;
+      color: white;
+}
+.botao1{
+    background-color:crimson;
+    width: 10%;
+    height: 10%;
+    float: bottom;
+    padding: 8px;
+    border:  firebrick;
+    color: white;
+     
+  
+}
+.botao:hover{
+	color: #330000;
+	background-color: #FFFFFF;
+	border-radius: 10px 0px 10px 0px;
+}
+.botao1:hover{
+	color: #330000;
+	background-color: #FFFFFF;	
+	border-radius: 10px 0px 10px 0px;
+}
+.menu{
+    width: 100px;
+    padding: 5px;
+    border:   crimson;
+    border:2px solid #999;  
+}
+.label{
+    margin-left: 25%;
+}
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left: 25%;
+    padding: 10px;
+}
+
+input[type=text]:focus {
+    width: 39%;
+}
+
+.btn{
+    background-color:crimson;
+    width: 10%;
+    height: 15%;
+    float: bottom;
+    padding: 12px;
+    border:  firebrick;
+    color: white;
+    
+}
+.btn:hover{
+	color: #330000;
+	background-color: #FFFFFF;
+	border-radius: 10px 0px 10px 0px;
+}
+.informacao{
+    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: transparent;
+}      
+#meumapa{
+          width: 30%;
+          height: 30%;
+          margin-left: 20%;
+          display: none;
+         
+      }
